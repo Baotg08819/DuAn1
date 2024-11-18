@@ -10,3 +10,5 @@ cgi-bin
 .vscode/
 **/.DS_Store
 .env
+.env.example
+.gitignore

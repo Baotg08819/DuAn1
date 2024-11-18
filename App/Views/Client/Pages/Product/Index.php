@@ -53,7 +53,10 @@ class Index extends BaseView
                                                     <a href="/products/<?= $item['id'] ?>" type="button" class="btn btn-sm btn-outline-info">Chi tiết</a>
                                                     <form action="/cart/add" method="post">
                                                         <input type="hidden" name="method" id="" value="POST">
-                                                        <input type="hidden" name="id" id="" value="<?= $item['id'] ?>" required>
+                                                        <input type="hidden" name="product_id" value="<?= $item['id'] ?>">
+                                                        <input type="hidden" name="image" value="<?= $item['image'] ?>">
+                                                        <input type="hidden" name="name" value="<?= $item['name'] ?>">
+                                                        <input type="hidden" name="price" value="<?= $item['price'] ?>">
                                                         <button type="submit" class="btn btn-sm btn-outline-success">Thêm vào giỏ hàng</button>
                                                     </form>
                                                 </div>

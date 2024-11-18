@@ -48,7 +48,7 @@ class Header extends BaseView
                     <a class="nav-link text-body" href="/products">Sản phẩm</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-body" href="#">Giỏ hàng</a>
+                    <a class="nav-link text-body" href="/cart">Giỏ hàng</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-body" href="/about">Giới thiệu</a>

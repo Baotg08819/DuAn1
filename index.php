@@ -30,6 +30,11 @@ Route::get('/products/{id}', 'App\Controllers\Client\ProductController@detail');
 Route::get('/products/categories/{id}', 'App\Controllers\Client\ProductController@getProductByCategory');
 Route::get('/about', 'App\Controllers\Client\AboutController@index');
 Route::get('/contact', 'App\Controllers\Client\ContactController@index');
+// cart
+Route::get('/cart', 'App\Controllers\Client\CartController@index');
+Route::post('/cart/add', 'App\Controllers\Client\CartController@add');
+Route::get('/cart/remove/{id}', 'App\Controllers\Client\CartController@remove');
+
 
 //*** Form
 Route::get('/register', 'App\Controllers\Client\AuthController@register');
